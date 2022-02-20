@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>To do list browser</title>
+  <link rel="stylesheet" href="css/import.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!-- 조건
+1.실시간 시계
+2.로컬 스토리지를 사용한 로그인
+3.로컬 스토리지를 사용한 투두리스트
+3.랜덤 배경 이미지
+4.날씨와 위치 (geolocation)
+5.여러분의 CSS 실력을 뽐내주세요💖 -->
+
+</head>
+
+<body>
+
+  <article>
+    <aside class="visual">
+      <button><i class="material-icons-outlined">
+          photo_library
+        </i></button>
+    </aside>
+    <section>
+      <div class="weather">
+        <span></span>
+        <span></span>
+      </div>
+      <div class="clockBox">
+        <h2>today</h2>
+        <p class="today"></p>
+        <p class="time"></p>
+      </div>
+      <div class="login">
+        <form class="hidden" id="logForm">
+          <fieldset>
+            <legend>log in form</legend>
+            <input required maxlength="15" type="text" placeholder="What is your name?">
+            <input type="submit" value="Go">
+          </fieldset>
+        </form>
+        <h1 class="hidden" id="greeting"></h1>
+      </div>
+    </section>
+  </article>
+
+  <main>
+    <form id="todo-form" class="todoList">
+      <fieldset>
+        <legend>to do list form</legend>
+        <input type="text" placeholder="Write a To Do and Press Enter" required />
+      </fieldset>
+    </form>
+    <div>
+      <ul id="todo-list"></ul>
+    </div>
+  </main>
+
+
+
+  <script src="js/clock.js"></script>
+  <script src="js/login.js"></script>
+  <script src="js/todolist.js"></script>
+  <script src="js/changeBg.js"></script>
+  <script src="js/wheather.js"></script>
+
+
+</body>
+
+</html>
