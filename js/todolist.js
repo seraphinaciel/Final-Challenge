@@ -27,8 +27,8 @@ function paintToDo(newTodo) {
   const i = document.createElement("i");
   i.classList.add("material-icons-outlined");
   i.innerText = "do_disturb_on";
-  li.appendChild(span);
   li.appendChild(button).appendChild(i);
+  li.appendChild(span);
   toDoList.appendChild(li); 
   console.log(li);
   button.addEventListener("click", deleteToDo);

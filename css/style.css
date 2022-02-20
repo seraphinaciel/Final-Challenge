@@ -26,7 +26,7 @@ h1 span{display:inline-block;}
 
 main {width: 80%;padding-top:2em;margin:auto}
 .todoList{width:80%;margin:auto;}
-.todoList input{width:100%;border-bottom:1px solid;}
+.todoList input{width:100%;border-bottom:1px solid;text-align: center;}
 .todoList button{padding-left:.5em;}
 main div{height:calc(96.5vh - 13em);overflow-y:auto;}
 main li{border-bottom:1px dashed #ddd;padding: 1em 0;}
